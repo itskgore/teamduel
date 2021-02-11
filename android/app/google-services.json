@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "721330682346",
+    "firebase_url": "https://turf-pick.firebaseio.com",
+    "project_id": "turf-pick",
+    "storage_bucket": "turf-pick.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721330682346:android:026b7ad69105f3ac4e9a93",
+        "android_client_info": {
+          "package_name": "com.example.winx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721330682346-m4b6gg0aa0s49g538c4thljtqtm5befk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjts18SH5i5fcLIj8OCUQPkn7nmCVfOY8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721330682346-m4b6gg0aa0s49g538c4thljtqtm5befk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
