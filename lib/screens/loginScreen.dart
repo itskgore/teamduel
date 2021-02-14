@@ -2,7 +2,9 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:winx/config/colors.dart';
 import 'package:winx/functions/calcuFunc.dart';
 import 'package:winx/functions/widgetFunc.dart';
 import 'package:winx/navigatorAnimation/bouncinganagivation.dart';
@@ -13,6 +15,7 @@ import 'package:winx/screens/homeScreen.dart';
 import 'package:winx/screens/signupScreen.dart';
 import 'package:winx/widgets/forgotPassDialog.dart';
 
+import 'cricket/matchups/matchUpsHome.dart';
 import 'socialLoginScreen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -73,7 +76,7 @@ class _LoginScreenState extends State<LoginScreen> {
     await user.getWallet();
     print(user.token);
     Navigator.pushReplacement(
-        context, DownSlideNavigation(widget: HomeScreen()));
+        context, DownSlideNavigation(widget: MatchUpHome()));
   }
 
   Future buildShowDialog(BuildContext context) {
@@ -88,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
     double width = buildWidth(context);
     return Scaffold(
       key: _scaffoldkey,
-      backgroundColor: Colors.grey[200],
+      backgroundColor: AppColors.mainColor,
       body: WillPopScope(
         onWillPop: () {
           SystemNavigator.pop();
@@ -100,18 +103,14 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Column(
               // mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                buildSizedBox(height, 0.07),
+                buildSizedBox(height, 0.05),
                 Container(
                   alignment: Alignment.center,
                   height: height * 0.20,
                   width: double.infinity,
-                  child: Text(
-                    'LOGO',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 35),
-                  ),
+                  child: Image.asset("assets/images/teamduel.png"),
                 ),
-                buildSizedBox(height, 0.06),
+                buildSizedBox(height, 0.03),
                 Form(
                   key: _formKey,
                   child: Container(
@@ -120,23 +119,30 @@ class _LoginScreenState extends State<LoginScreen> {
                       children: [
                         TextFormField(
                           autocorrect: true,
+                          style: TextStyle(color: Colors.white),
                           keyboardType: TextInputType.text,
-                          cursorColor: Colors.black,
+                          cursorColor: Colors.white,
                           cursorRadius: Radius.circular(10),
                           decoration: InputDecoration(
-                              contentPadding:
-                                  EdgeInsets.symmetric(vertical: 14),
-                              prefixIcon: Icon(FontAwesomeIcons.user),
-                              labelText: 'Email / Mobile No.',
-                              border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  borderSide: BorderSide(color: Colors.black)),
-                              enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  borderSide: BorderSide(color: Colors.black)),
-                              disabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  borderSide: BorderSide(color: Colors.black))),
+                            fillColor: AppColors.mainColorLight,
+                            filled: true,
+                            contentPadding: EdgeInsets.symmetric(vertical: 14),
+                            prefixIcon: Icon(
+                              FontAwesomeIcons.user,
+                              color: Colors.white,
+                            ),
+                            hintText: 'Email / Mobile No.',
+                            hintStyle: GoogleFonts.poppins(
+                                color: Colors.white, fontSize: 12),
+                            focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(0),
+                                borderSide: BorderSide(
+                                    color: AppColors.mainColorLight)),
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(0),
+                                borderSide: BorderSide(
+                                    color: AppColors.mainColorLight)),
+                          ),
                           validator: (val) {
                             val = val.trim();
                             if (val.isEmpty || val.length < 5) {
@@ -150,10 +156,39 @@ class _LoginScreenState extends State<LoginScreen> {
                         buildSizedBox(height, 0.03),
                         TextFormField(
                           obscureText: _password,
-                          autocorrect: true,
+                          style: TextStyle(color: Colors.white),
                           keyboardType: TextInputType.text,
-                          cursorColor: Colors.black,
+                          cursorColor: Colors.white,
                           cursorRadius: Radius.circular(10),
+                          decoration: InputDecoration(
+                            hintText: 'Password',
+                            hintStyle: GoogleFonts.poppins(
+                                color: Colors.white, fontSize: 12),
+                            fillColor: AppColors.mainColorLight,
+                            filled: true,
+                            contentPadding: EdgeInsets.symmetric(vertical: 14),
+                            prefixIcon: IconButton(
+                              icon: Icon(
+                                _password
+                                    ? FontAwesomeIcons.eyeSlash
+                                    : FontAwesomeIcons.eye,
+                                color: Colors.white,
+                              ),
+                              onPressed: () {
+                                setState(() {
+                                  _password = !_password;
+                                });
+                              },
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(0),
+                                borderSide: BorderSide(
+                                    color: AppColors.mainColorLight)),
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(0),
+                                borderSide: BorderSide(
+                                    color: AppColors.mainColorLight)),
+                          ),
                           validator: (val) {
                             val = val.trim();
                             if (val.isEmpty || val.length <= 3) {
@@ -163,29 +198,6 @@ class _LoginScreenState extends State<LoginScreen> {
                           onSaved: (val) {
                             _loginData['password'] = val.trim();
                           },
-                          decoration: InputDecoration(
-                              contentPadding:
-                                  EdgeInsets.symmetric(vertical: 14),
-                              prefixIcon: IconButton(
-                                icon: Icon(_password
-                                    ? FontAwesomeIcons.eyeSlash
-                                    : FontAwesomeIcons.eye),
-                                onPressed: () {
-                                  setState(() {
-                                    _password = !_password;
-                                  });
-                                },
-                              ),
-                              labelText: 'Password',
-                              border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  borderSide: BorderSide(color: Colors.black)),
-                              enabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  borderSide: BorderSide(color: Colors.black)),
-                              disabledBorder: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(30),
-                                  borderSide: BorderSide(color: Colors.black))),
                         ),
                         buildSizedBox(height, 0.01),
                         Container(
@@ -198,7 +210,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             child: Text(
                               'Forgot Password ?',
                               textAlign: TextAlign.right,
-                              style: TextStyle(fontWeight: FontWeight.bold),
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Color.fromRGBO(16, 119, 194, 1)),
                             ),
                           ),
                         ),
@@ -206,8 +220,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         loading
                             ? CircularProgressIndicator()
                             : Container(
-                                width: width * 0.65,
-                                height: height * 0.08,
+                                width: width * 0.90,
+                                height: 40,
                                 child: RaisedButton(
                                   onPressed: () {
                                     _submit(context);
@@ -217,11 +231,11 @@ class _LoginScreenState extends State<LoginScreen> {
                                   animationDuration:
                                       Duration(milliseconds: 350),
                                   shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(30)),
+                                      borderRadius: BorderRadius.circular(0)),
                                   child: Text(
-                                    'LOGIN',
+                                    'Log In',
                                     style: TextStyle(
-                                        color: Colors.black, fontSize: 18),
+                                        color: Colors.white, fontSize: 18),
                                   ),
                                 ),
                               ),
@@ -230,7 +244,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         Text(
                           'Or connect using',
-                          style: TextStyle(color: Colors.black),
+                          style: TextStyle(color: Colors.white),
                         ),
                         buildSizedBox(height, 0.01),
                         SocialLogin(),
@@ -239,14 +253,14 @@ class _LoginScreenState extends State<LoginScreen> {
                             text: TextSpan(children: [
                           TextSpan(
                               text: "Don't have an account? ",
-                              style: TextStyle(color: Colors.black)),
+                              style: TextStyle(color: Colors.white)),
                           TextSpan(
                               text: "Signup",
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () => Navigator.push(
                                     context, FadeNavigation(widget: SingUp())),
                               style: TextStyle(
-                                  color: Colors.blue,
+                                  color: Color.fromRGBO(16, 119, 194, 1),
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16))
                         ]))

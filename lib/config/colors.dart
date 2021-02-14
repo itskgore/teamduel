@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   static Color mainColor = Color.fromRGBO(23, 35, 49, 1);
+  static Color buttonColor = Color.fromRGBO(16, 119, 194, 1);
+  static Color labelColor = Color.fromRGBO(186, 196, 208, 0.91);
+  static Color mainColorLight = Color.fromRGBO(32, 49, 70, 0.91);
   static Color gradientColor1 = Color.fromRGBO(14, 101, 173, 1);
   static Color gradientColor2 = Color.fromRGBO(14, 101, 173, 1);
   static Color appdarkGray = Color.fromRGBO(239, 239, 239, 1);

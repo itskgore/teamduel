@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ashutosharage/Flutter/winx/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "/Users/ashutosharage/Flutter/teamduel/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/4c0b774c09d5393feb013f0dbe753af3/play-services-base-17.0.0/res/values-en-rGB/values.xml",
@@ -21,6 +21,23 @@
                     }
                 },
                 {
+                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/722c2d0c2a229c368e8f6439e3518530/jetified-play-services-basement-17.0.0/res/values-en-rGB/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "196",
+                        "endOffsets": "447"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1245",
+                        "endColumns": "196",
+                        "endOffsets": "1437"
+                    }
+                },
+                {
                     "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/values-en-rGB/values-en-rGB.xml",
                     "from": {
                         "startLines": "2",
@@ -35,23 +52,6 @@
                         "startOffsets": "2753",
                         "endColumns": "100",
                         "endOffsets": "2849"
-                    }
-                },
-                {
-                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/88cce25b22522eb0afe164b525a5546c/jetified-play-services-basement-17.0.0/res/values-en-rGB/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "251",
-                        "endColumns": "196",
-                        "endOffsets": "447"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1245",
-                        "endColumns": "196",
-                        "endOffsets": "1437"
                     }
                 }
             ]

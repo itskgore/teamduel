@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ashutosharage/Flutter/winx/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-hu/values-hu.xml",
+            "outputFile": "/Users/ashutosharage/Flutter/teamduel/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-hu/values-hu.xml",
             "map": [
                 {
-                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/88cce25b22522eb0afe164b525a5546c/jetified-play-services-basement-17.0.0/res/values-hu/values.xml",
+                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/722c2d0c2a229c368e8f6439e3518530/jetified-play-services-basement-17.0.0/res/values-hu/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

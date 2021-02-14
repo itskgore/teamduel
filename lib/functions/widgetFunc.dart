@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:winx/config/colors.dart';
 
 SizedBox buildSizedBox(double height, double value) {
   return SizedBox(
@@ -22,16 +23,22 @@ AppBar buildAppBar(BuildContext context, title) {
     centerTitle: true,
     title: Text(
       '$title',
-      style: TextStyle(color: Colors.black),
+      style: TextStyle(color: Colors.white),
     ),
     backgroundColor: Colors.transparent,
     leading: IconButton(
         icon: Icon(
           Icons.arrow_back_ios,
-          color: Colors.black,
+          color: Colors.white,
         ),
         onPressed: () => Navigator.of(context).pop()),
   );
+}
+
+OutlineInputBorder buildOutlineInputBorder() {
+  return OutlineInputBorder(
+      borderRadius: BorderRadius.circular(0),
+      borderSide: BorderSide(color: AppColors.mainColorLight));
 }
 
 void showSnack(
@@ -44,10 +51,10 @@ void showSnack(
       stringList,
       textAlign: TextAlign.center,
       style: TextStyle(
-          fontSize: 13.0, fontWeight: FontWeight.bold, color: Colors.red),
+          fontSize: 13.0, fontWeight: FontWeight.bold, color: Colors.white),
     ),
     duration: Duration(seconds: 2),
-    backgroundColor: Colors.black87,
+    backgroundColor: AppColors.mainColorLight,
   ));
 }
 
@@ -101,7 +108,7 @@ BoxDecoration buildBoxDecoration() {
 
 BoxDecoration buildBoxDecoration2() {
   return BoxDecoration(
-      color: Colors.white,
+      color: AppColors.mainColor,
       borderRadius: BorderRadius.only(
           topLeft: Radius.circular(20), topRight: Radius.circular(20)));
 }
@@ -109,6 +116,7 @@ BoxDecoration buildBoxDecoration2() {
 AppBar buildAppBarHome(BuildContext context, String text) {
   return AppBar(
     title: Text(text),
+    backgroundColor: AppColors.mainColor,
     centerTitle: true,
     leading: IconButton(
         icon: Icon(Icons.arrow_back_ios),

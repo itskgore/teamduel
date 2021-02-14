@@ -51,7 +51,8 @@ class _KycStatusState extends State<KycStatus> {
           child: Text(loading ? 'Loading...' : '${user.kyc[0].msg.toString()}',
               overflow: TextOverflow.ellipsis,
               maxLines: 1,
-              style: TextStyle(color: Colors.white, fontSize: 13)),
+              style: TextStyle(
+                  color: Color.fromRGBO(255, 255, 255, 0.7), fontSize: 13)),
         ),
       ),
     );

@@ -154,12 +154,13 @@ class _SocialLoginState extends State<SocialLogin> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               IconButton(
-                  icon: Icon(FontAwesomeIcons.google, color: Colors.lightBlue),
+                  icon: Icon(FontAwesomeIcons.google, color: Colors.white),
                   onPressed: () {
                     googleLogin(context);
                   }),
               IconButton(
-                  icon: Icon(FontAwesomeIcons.facebookF, color: Colors.blue),
+                  icon: Icon(FontAwesomeIcons.facebook,
+                      size: 30, color: Color.fromRGBO(16, 119, 194, 1)),
                   onPressed: () {
                     loginFacebook(context);
                   }),

@@ -260,7 +260,7 @@ class _HorseMatchUpLobbyState extends State<HorseMatchUpLobby> {
                                     height: 10,
                                   ),
                                   Container(
-                                    color: Colors.white,
+                                    color: AppColors.mainColor,
                                     padding: EdgeInsets.only(
                                         left: 15, right: 15, bottom: 20),
                                     child: Column(
@@ -344,6 +344,7 @@ class _HorseMatchUpLobbyState extends State<HorseMatchUpLobby> {
                                                         star: matchup1.star,
                                                         trainer:
                                                             matchup1.trainer,
+                                                        isRight: false,
                                                       )),
                                                 ),
                                                 SizedBox(
@@ -378,7 +379,7 @@ class _HorseMatchUpLobbyState extends State<HorseMatchUpLobby> {
                                                               .poppins(
                                                                   fontSize: 12,
                                                                   color: Colors
-                                                                      .black),
+                                                                      .white),
                                                         ),
                                                 ),
                                                 SizedBox(
@@ -420,6 +421,7 @@ class _HorseMatchUpLobbyState extends State<HorseMatchUpLobby> {
                                                         star: matchup2.star,
                                                         trainer:
                                                             matchup2.trainer,
+                                                        isRight: true,
                                                       )),
                                                 ),
                                               ],

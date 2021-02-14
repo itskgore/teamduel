@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ashutosharage/Flutter/winx/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "/Users/ashutosharage/Flutter/teamduel/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/res/values-watch-v20/values.xml",
+                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/res/values-watch-v20/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",

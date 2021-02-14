@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		yYt9IStPWR68FbP2gVnA1U70FNE=
+		LP+oNGLigCCnmSfpy102sPbLzhw=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -32,6 +32,10 @@
 		<data>
 		SWgmdA1L1SAAx/Y51x1E/i/TWDk=
 		</data>
+		<key>flutter_assets/assets/images/Vector.png</key>
+		<data>
+		XUamVmuw8PKSsnDrW45gLQqnNew=
+		</data>
 		<key>flutter_assets/assets/images/coins.png</key>
 		<data>
 		PjdvyDKFUrLIN9zhmKTM6wUIlho=
@@ -40,6 +44,10 @@
 		<data>
 		rt4m+LZyaXw2EZdned29UKIXGLE=
 		</data>
+		<key>flutter_assets/assets/images/fantasy.png</key>
+		<data>
+		RUFNZSrsc0Yw/7iHHx6HYYfHDmw=
+		</data>
 		<key>flutter_assets/assets/images/filter.png</key>
 		<data>
 		t3IxBX+c37RiQjXa7Jovab+t26s=
@@ -47,6 +55,18 @@
 		<key>flutter_assets/assets/images/googlepay.png</key>
 		<data>
 		jh5WIX75uLVItEkCqvtPK+KGM8s=
+		</data>
+		<key>flutter_assets/assets/images/horse.png</key>
+		<data>
+		TgS7l1anXnzjlzR36rBbpPIeLu4=
+		</data>
+		<key>flutter_assets/assets/images/jointHistory.png</key>
+		<data>
+		yWtLsh4Ry/+QpTtpHE500tuRnNA=
+		</data>
+		<key>flutter_assets/assets/images/liability.png</key>
+		<data>
+		0mehOUi7QxKrr3R0plCmJ0Prpz0=
 		</data>
 		<key>flutter_assets/assets/images/paypal.png</key>
 		<data>
@@ -88,6 +108,22 @@
 		<data>
 		YytsHdGyH90OUszv/2ncZgytX04=
 		</data>
+		<key>flutter_assets/assets/images/support.png</key>
+		<data>
+		ZfIn4osc/wlSr16ERcBoF3SOEqQ=
+		</data>
+		<key>flutter_assets/assets/images/teamduel.png</key>
+		<data>
+		3Cl2bqr44U7OJ/Zt1fQpVOL6h1o=
+		</data>
+		<key>flutter_assets/assets/images/toppng.png</key>
+		<data>
+		TlMhcPQzMYh7sXA+hPYky0iWk2M=
+		</data>
+		<key>flutter_assets/assets/images/transHistory.png</key>
+		<data>
+		KUAw9jtudb80EGpoT8LrG1x419I=
+		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.ttf</key>
 		<data>
 		nIzDzw7hjOThppiX5OleKNAxtqM=
@@ -98,7 +134,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		h+ZGs/3lK9/Ue9JLxs5T2rCqGkI=
+		SIQXsR6ffoFGmaUa6VLCI/e2USc=
 		</data>
 		<key>flutter_assets/packages/country_pickers/assets/ad.png</key>
 		<data>
@@ -1151,11 +1187,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			yYt9IStPWR68FbP2gVnA1U70FNE=
+			LP+oNGLigCCnmSfpy102sPbLzhw=
 			</data>
 			<key>hash2</key>
 			<data>
-			VvuwNSbuusZ4KPE44xQY3mT8u8p2ILYJ17RZU6t4Rvg=
+			nVZ1AHlPTlRCJnHLeA5uQEyIfgBWBwucOQhYThMFZcM=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -1213,6 +1249,17 @@
 			Ak2oE4iQ8YWUchDOIWXPV/JpHcMI+spvKUbU5FpVJ4g=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/Vector.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			XUamVmuw8PKSsnDrW45gLQqnNew=
+			</data>
+			<key>hash2</key>
+			<data>
+			BiVwm41dl9xHbIT5JPSf3UeP+6DAZZXuGFJ31Vhj7x0=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/coins.png</key>
 		<dict>
 			<key>hash</key>
@@ -1235,6 +1282,17 @@
 			cqzhrd6HiTPMclRa7cwV5jtQ1SfRh5KoQMkLsX4WJd0=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/fantasy.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RUFNZSrsc0Yw/7iHHx6HYYfHDmw=
+			</data>
+			<key>hash2</key>
+			<data>
+			TtTYuRr9FwXcGY29UAmdJ2OGFjXPHN4TyH2ugI664IU=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/images/filter.png</key>
 		<dict>
 			<key>hash</key>
@@ -1255,6 +1313,39 @@
 			<key>hash2</key>
 			<data>
 			TyM6A9MDFpcVdWsY1KTxYnMzpAo+LbIccposKRjxjJc=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/horse.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TgS7l1anXnzjlzR36rBbpPIeLu4=
+			</data>
+			<key>hash2</key>
+			<data>
+			jWiwHp34r4/Yvw91NKGhnMUgUPkIQICJQLptyY2HJak=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/jointHistory.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yWtLsh4Ry/+QpTtpHE500tuRnNA=
+			</data>
+			<key>hash2</key>
+			<data>
+			c5lHTpjqAMkT4hDgiNeAhFgfE69jrrGLAnWeFbiLXIw=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/liability.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0mehOUi7QxKrr3R0plCmJ0Prpz0=
+			</data>
+			<key>hash2</key>
+			<data>
+			LuliTi9d9VXQM2k/7YQTeNL4084lPg8P9a70gT4zzA8=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/images/paypal.png</key>
@@ -1367,6 +1458,50 @@
 			dCXvF3P3qFKjAW84OO3/xrXpdy5Ydh04yji5Pk6LyHE=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/images/support.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ZfIn4osc/wlSr16ERcBoF3SOEqQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			OkjDY5Z0dAZnecdmPIkVV9JSOkzHArbM1jg9YOQEZfk=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/teamduel.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			3Cl2bqr44U7OJ/Zt1fQpVOL6h1o=
+			</data>
+			<key>hash2</key>
+			<data>
+			9AUchj5V2xblEyd4gekQZUY475hImB8HsscYMsXLJXQ=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/toppng.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TlMhcPQzMYh7sXA+hPYky0iWk2M=
+			</data>
+			<key>hash2</key>
+			<data>
+			9ENB+ovoCpQQSR/Gn6ULG75onI9KObFadIxRui6O+V8=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/images/transHistory.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			KUAw9jtudb80EGpoT8LrG1x419I=
+			</data>
+			<key>hash2</key>
+			<data>
+			ktx7P2DYAox1PoAWWvVKrcogIlBZc0TruX3SOENFDh4=
+			</data>
+		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -1393,11 +1528,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h+ZGs/3lK9/Ue9JLxs5T2rCqGkI=
+			SIQXsR6ffoFGmaUa6VLCI/e2USc=
 			</data>
 			<key>hash2</key>
 			<data>
-			UZK+oULtTbSDWKQKea86Wkc3Vi+PziIvacAsGDhFecA=
+			kIb4WelX/Y8EwZjFzOWJFK/cBHbXKNsMWmOzyeFW78o=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/country_pickers/assets/ad.png</key>

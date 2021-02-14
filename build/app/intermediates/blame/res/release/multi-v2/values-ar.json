@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ashutosharage/Flutter/winx/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-ar/values-ar.xml",
+            "outputFile": "/Users/ashutosharage/Flutter/teamduel/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values-ar/values-ar.xml",
             "map": [
                 {
                     "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/4c0b774c09d5393feb013f0dbe753af3/play-services-base-17.0.0/res/values-ar/values.xml",
@@ -21,23 +21,6 @@
                     }
                 },
                 {
-                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/88cce25b22522eb0afe164b525a5546c/jetified-play-services-basement-17.0.0/res/values-ar/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "188",
-                        "endOffsets": "435"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1217",
-                        "endColumns": "188",
-                        "endOffsets": "1401"
-                    }
-                },
-                {
                     "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/res/values-ar/values-ar.xml",
                     "from": {
                         "startLines": "2",
@@ -52,6 +35,23 @@
                         "startOffsets": "2690",
                         "endColumns": "100",
                         "endOffsets": "2786"
+                    }
+                },
+                {
+                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/722c2d0c2a229c368e8f6439e3518530/jetified-play-services-basement-17.0.0/res/values-ar/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "188",
+                        "endOffsets": "435"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1217",
+                        "endColumns": "188",
+                        "endOffsets": "1401"
                     }
                 }
             ]

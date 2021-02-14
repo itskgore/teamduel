@@ -81,7 +81,7 @@ class MyApp extends StatelessWidget {
                       if (snap.data) {
                         return MatchUpHome();
                       } else {
-                        return OnboardingScreen();
+                        return LoginScreen();
                       }
                     }
                   },

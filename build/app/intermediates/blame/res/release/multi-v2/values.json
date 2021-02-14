@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ashutosharage/Flutter/winx/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/ashutosharage/Flutter/teamduel/build/app/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/88cce25b22522eb0afe164b525a5546c/jetified-play-services-basement-17.0.0/res/values/values.xml",
-                    "from": {
-                        "startLines": "4,7",
-                        "startColumns": "0,0",
-                        "startOffsets": "238,401",
-                        "endColumns": "63,166",
-                        "endOffsets": "301,567"
-                    },
-                    "to": {
-                        "startLines": "84,95",
-                        "startColumns": "4,4",
-                        "startOffsets": "5259,6484",
-                        "endColumns": "67,166",
-                        "endOffsets": "5322,6646"
-                    }
-                },
-                {
-                    "source": "/Users/ashutosharage/Flutter/winx/android/app/src/main/res/values/styles.xml",
+                    "source": "/Users/ashutosharage/Flutter/teamduel/android/app/src/main/res/values/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -40,20 +23,37 @@
                     }
                 },
                 {
-                    "source": "/Users/ashutosharage/Flutter/winx/build/app/generated/res/google-services/release/values/values.xml",
+                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/722c2d0c2a229c368e8f6439e3518530/jetified-play-services-basement-17.0.0/res/values/values.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,303,385,489,598,718,811",
-                        "endColumns": "143,103,81,103,108,119,92,69",
-                        "endOffsets": "194,298,380,484,593,713,806,876"
+                        "startLines": "4,7",
+                        "startColumns": "0,0",
+                        "startOffsets": "238,401",
+                        "endColumns": "63,166",
+                        "endOffsets": "301,567"
                     },
                     "to": {
-                        "startLines": "105,108,109,110,111,112,113,114",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "7777,8052,8156,8238,8342,8451,8571,8664",
-                        "endColumns": "143,103,81,103,108,119,92,69",
-                        "endOffsets": "7916,8151,8233,8337,8446,8566,8659,8729"
+                        "startLines": "84,95",
+                        "startColumns": "4,4",
+                        "startOffsets": "5259,6484",
+                        "endColumns": "67,166",
+                        "endOffsets": "5322,6646"
+                    }
+                },
+                {
+                    "source": "/Users/ashutosharage/Flutter/teamduel/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2,5,11",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,171,380",
+                        "endColumns": "46,59,70",
+                        "endOffsets": "97,226,446"
+                    },
+                    "to": {
+                        "startLines": "86,106,107",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "5397,7921,7981",
+                        "endColumns": "46,59,70",
+                        "endOffsets": "5439,7976,8047"
                     }
                 },
                 {
@@ -76,20 +76,20 @@
                     }
                 },
                 {
-                    "source": "/Users/ashutosharage/Flutter/winx/android/app/src/main/res/values/strings.xml",
+                    "source": "/Users/ashutosharage/Flutter/teamduel/build/app/generated/res/google-services/release/values/values.xml",
                     "from": {
-                        "startLines": "2,5,11",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,171,380",
-                        "endColumns": "46,59,70",
-                        "endOffsets": "97,226,446"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,303,385,489,598,718,811",
+                        "endColumns": "143,103,81,103,108,119,92,69",
+                        "endOffsets": "194,298,380,484,593,713,806,876"
                     },
                     "to": {
-                        "startLines": "86,106,107",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "5397,7921,7981",
-                        "endColumns": "46,59,70",
-                        "endOffsets": "5439,7976,8047"
+                        "startLines": "105,108,109,110,111,112,113,114",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "7777,8052,8156,8238,8342,8451,8571,8664",
+                        "endColumns": "143,103,81,103,108,119,92,69",
+                        "endOffsets": "7916,8151,8233,8337,8446,8566,8659,8729"
                     }
                 },
                 {

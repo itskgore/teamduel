@@ -1,14 +1,14 @@
 [
     {
-        "merged": "/Users/ashutosharage/Flutter/winx/build/google_sign_in/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
-        "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+        "merged": "/Users/ashutosharage/Flutter/teamduel/build/google_sign_in/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
     },
     {
-        "merged": "/Users/ashutosharage/Flutter/winx/build/google_sign_in/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
-        "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+        "merged": "/Users/ashutosharage/Flutter/teamduel/build/google_sign_in/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
     },
     {
-        "merged": "/Users/ashutosharage/Flutter/winx/build/google_sign_in/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
-        "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+        "merged": "/Users/ashutosharage/Flutter/teamduel/build/google_sign_in/intermediates/res/merged/release/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
     }
 ]

@@ -4,11 +4,14 @@ import 'package:country_pickers/country.dart';
 import 'package:country_pickers/country_pickers.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
+import 'package:winx/config/colors.dart';
 import 'package:winx/functions/widgetFunc.dart';
 import 'package:winx/providers/user.dart';
 
+// ignore: must_be_immutable
 class EditUser extends StatefulWidget {
   String userImg;
   final String email;
@@ -118,7 +121,7 @@ class _EditUserState extends State<EditUser> {
                     width: double.infinity,
                     padding: EdgeInsets.all(20),
                     decoration: BoxDecoration(
-                        color: Colors.white,
+                        color: AppColors.mainColorLight,
                         shape: BoxShape.rectangle,
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
@@ -181,8 +184,9 @@ class _EditUserState extends State<EditUser> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: AppColors.mainColor,
         key: _scaffoldkey,
-        appBar: buildAppBarHome(context, 'Edit User'),
+        appBar: buildAppBarHome(context, 'Edit Profile'),
         body: SafeArea(
             child: Container(
           height: double.infinity,
@@ -215,7 +219,7 @@ class _EditUserState extends State<EditUser> {
                           top: 50,
                           left: 80,
                           child: CircleAvatar(
-                            backgroundColor: Colors.green,
+                            backgroundColor: AppColors.mainColorLight,
                             radius: 18.0,
                             child: IconButton(
                               icon: Icon(FontAwesomeIcons.pencilAlt),
@@ -250,24 +254,26 @@ class _EditUserState extends State<EditUser> {
                       onSaved: (value) {
                         userEdit['email'] = value.trim();
                       },
+                      cursorColor: Colors.white,
+                      style: GoogleFonts.poppins(color: Colors.white),
                       decoration: InputDecoration(
-                          contentPadding: EdgeInsets.symmetric(vertical: 10),
-                          prefixIcon: Icon(FontAwesomeIcons.user),
-                          labelText: 'Email / Mobile No.',
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(color: Colors.white)),
-                          enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide:
-                                  BorderSide(color: Colors.grey, width: 1)),
-                          disabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(color: Colors.white))),
+                        fillColor: AppColors.mainColorLight,
+                        filled: true,
+                        contentPadding: EdgeInsets.symmetric(vertical: 10),
+                        prefixIcon: Icon(
+                          FontAwesomeIcons.user,
+                          color: Colors.white,
+                        ),
+                        hintText: 'Email / Mobile No.',
+                        focusedBorder: buildOutlineInputBorder(),
+                        border: buildOutlineInputBorder(),
+                      ),
                     ),
                     buildSizedBox(buildHeight(context), 0.04),
                     TextFormField(
-                      // onTap: _presentDatePicker,
+                      onTap: _presentDatePicker,
+                      cursorColor: Colors.white,
+                      style: GoogleFonts.poppins(color: Colors.white),
                       readOnly: true,
                       // initialValue: user.userDetails[0].dob,
                       showCursor: false,
@@ -286,19 +292,17 @@ class _EditUserState extends State<EditUser> {
                         userEdit['dob'] = val.trim();
                       },
                       decoration: InputDecoration(
-                          contentPadding: EdgeInsets.symmetric(vertical: 10),
-                          prefixIcon: Icon(FontAwesomeIcons.birthdayCake),
-                          labelText: 'Birth date',
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(color: Colors.white)),
-                          enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide:
-                                  BorderSide(color: Colors.grey, width: 1)),
-                          disabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(color: Colors.white))),
+                        fillColor: AppColors.mainColorLight,
+                        filled: true,
+                        contentPadding: EdgeInsets.symmetric(vertical: 10),
+                        prefixIcon: Icon(
+                          FontAwesomeIcons.birthdayCake,
+                          color: Colors.white,
+                        ),
+                        hintText: 'Birth date',
+                        focusedBorder: buildOutlineInputBorder(),
+                        border: buildOutlineInputBorder(),
+                      ),
                     ),
                     buildSizedBox(buildHeight(context), 0.04),
                     Row(
@@ -402,6 +406,8 @@ class _EditUserState extends State<EditUser> {
                     buildSizedBox(buildHeight(context), 0.04),
                     TextFormField(
                       readOnly: true,
+                      cursorColor: Colors.white,
+                      style: GoogleFonts.poppins(color: Colors.white),
                       initialValue: widget.country,
                       validator: (val) {
                         val = val.trim();
@@ -422,19 +428,17 @@ class _EditUserState extends State<EditUser> {
                         userEdit['country'] = val.trim();
                       },
                       decoration: InputDecoration(
-                          contentPadding: EdgeInsets.symmetric(vertical: 10),
-                          prefixIcon: Icon(FontAwesomeIcons.flag),
-                          labelText: 'Country',
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(color: Colors.white)),
-                          enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide:
-                                  BorderSide(color: Colors.grey, width: 1)),
-                          disabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(color: Colors.white))),
+                        fillColor: AppColors.mainColorLight,
+                        filled: true,
+                        contentPadding: EdgeInsets.symmetric(vertical: 10),
+                        prefixIcon: Icon(
+                          FontAwesomeIcons.flag,
+                          color: Colors.white,
+                        ),
+                        hintText: 'Country',
+                        focusedBorder: buildOutlineInputBorder(),
+                        border: buildOutlineInputBorder(),
+                      ),
                     ),
                     buildSizedBox(buildHeight(context), 0.04),
                     TextFormField(
@@ -448,39 +452,39 @@ class _EditUserState extends State<EditUser> {
                       onSaved: (val) {
                         userEdit['state'] = val.trim();
                       },
+                      cursorColor: Colors.white,
+                      style: GoogleFonts.poppins(color: Colors.white),
                       decoration: InputDecoration(
-                          contentPadding: EdgeInsets.symmetric(vertical: 10),
-                          prefixIcon: Icon(FontAwesomeIcons.mapMarked),
-                          labelText: 'State',
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(color: Colors.white)),
-                          enabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide:
-                                  BorderSide(color: Colors.grey, width: 1)),
-                          disabledBorder: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(30),
-                              borderSide: BorderSide(color: Colors.white))),
+                        fillColor: AppColors.mainColorLight,
+                        filled: true,
+                        contentPadding: EdgeInsets.symmetric(vertical: 10),
+                        prefixIcon: Icon(
+                          FontAwesomeIcons.mapMarked,
+                          color: Colors.white,
+                        ),
+                        hintText: 'State',
+                        focusedBorder: buildOutlineInputBorder(),
+                        border: buildOutlineInputBorder(),
+                      ),
                     ),
                     buildSizedBox(buildHeight(context), 0.03),
                     loading
                         ? CircularProgressIndicator()
                         : Container(
-                            width: buildWidth(context) * 0.75,
-                            height: buildHeight(context) * 0.08,
+                            width: buildWidth(context) * 0.90,
+                            height: 40,
                             child: RaisedButton(
                               onPressed: () {
                                 _submit(context);
                               },
-                              color: Colors.blue,
+                              color: AppColors.buttonColor,
                               elevation: 4,
                               animationDuration: Duration(milliseconds: 350),
                               shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(30)),
+                                  borderRadius: BorderRadius.circular(5)),
                               child: Text(
                                 'Update',
-                                style: TextStyle(
+                                style: GoogleFonts.poppins(
                                     color: Colors.white, fontSize: 18),
                               ),
                             ),

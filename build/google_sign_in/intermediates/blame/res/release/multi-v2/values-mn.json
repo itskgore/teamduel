@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ashutosharage/Flutter/winx/build/google_sign_in/intermediates/res/merged/release/values-mn/values-mn.xml",
+            "outputFile": "/Users/ashutosharage/Flutter/teamduel/build/google_sign_in/intermediates/res/merged/release/values-mn/values-mn.xml",
             "map": [
                 {
-                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/836911903a3b95dd6efa25febe54dca8/jetified-play-services-base-16.0.1/res/values-mn/values.xml",
+                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/4b16196635e5c985740c164e377dda3d/jetified-play-services-base-16.0.1/res/values-mn/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3ac5cd23ca22face633f4b3ac81f2a9a/jetified-play-services-basement-16.0.1/res/values-mn/values.xml",
+                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/7a090eb2b3cbc59bc302b212ef6901c3/jetified-play-services-basement-16.0.1/res/values-mn/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -57,10 +57,10 @@
             ]
         },
         {
-            "outputFile": "/Users/ashutosharage/Flutter/winx/build/google_sign_in/intermediates/incremental/mergeReleaseResources/merged.dir/values-mn/values-mn.xml",
+            "outputFile": "/Users/ashutosharage/Flutter/teamduel/build/google_sign_in/intermediates/incremental/mergeReleaseResources/merged.dir/values-mn/values-mn.xml",
             "map": [
                 {
-                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/836911903a3b95dd6efa25febe54dca8/jetified-play-services-base-16.0.1/res/values-mn/values.xml",
+                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/4b16196635e5c985740c164e377dda3d/jetified-play-services-base-16.0.1/res/values-mn/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -77,7 +77,7 @@
                     }
                 },
                 {
-                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3ac5cd23ca22face633f4b3ac81f2a9a/jetified-play-services-basement-16.0.1/res/values-mn/values.xml",
+                    "source": "/Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/7a090eb2b3cbc59bc302b212ef6901c3/jetified-play-services-basement-16.0.1/res/values-mn/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",

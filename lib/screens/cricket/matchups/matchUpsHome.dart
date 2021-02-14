@@ -250,6 +250,7 @@ class _MatchUpHomeState extends State<MatchUpHome>
     super.dispose();
   }
 
+  Coins coin;
   DateTime selectedDate = DateTime.now();
 
   Future<void> selectDate(BuildContext context) async {
@@ -502,6 +503,93 @@ class _MatchUpHomeState extends State<MatchUpHome>
                   //   ),
                   // ),
                   // buildSizedBoxWidth(buildWidth(context), 0.06),
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+                    margin: EdgeInsets.symmetric(vertical: 12),
+                    height: 29,
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: <Widget>[
+                        Image.asset(
+                          'assets/images/toppng.png',
+                          width: 15,
+                          height: 15,
+                        ),
+                        SizedBox(
+                          width: 2,
+                        ),
+                        Text(
+                          Coins.total == null ? '0' : Coins.total,
+                          overflow: TextOverflow.ellipsis,
+                          style: GoogleFonts.poppins(
+                              color: Colors.white, fontSize: 9),
+                        ),
+                        SizedBox(
+                          width: 4,
+                        ),
+                        Icon(
+                          FontAwesomeIcons.chevronDown,
+                          color: Colors.white,
+                          size: 8,
+                        )
+                      ],
+                    ),
+                  ),
+                  // Spacer(),
+                  SizedBox(
+                    width: 12,
+                  ),
+                  Consumer<CricketStates>(
+                    builder: (con, state, _) => GestureDetector(
+                        onTap: () {
+                          if (states.matchupSection ==
+                              MatchupSections.joinedmatchups) {
+                            state.changeMatchUpSection(
+                                MatchupSections.lobbymatchup);
+                            state.showHideAppBar(true);
+                          } else {
+                            state.changeMatchUpSection(
+                                MatchupSections.joinedmatchups);
+                            state.showHideAppBar(false);
+                          }
+                        },
+                        child: Icon(
+                          FontAwesomeIcons.plusCircle,
+                          size: 15,
+                          color: Color.fromRGBO(16, 119, 194, 1),
+                        )),
+                  ),
+                  SizedBox(
+                    width: 20,
+                  ),
+                  Container(
+                    // margin: EdgeInsets.only(right: 10),
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: <Widget>[
+                        Image.asset(
+                          "assets/images/Vector.png",
+                          width: 20,
+                        ),
+                        Positioned(
+                          right: -00,
+                          top: 8,
+                          child: Container(
+                            width: 15,
+                            height: 15,
+                            alignment: Alignment.topRight,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              color: Color.fromRGBO(173, 28, 10, 0.9),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
                 ],
                 title: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -513,11 +601,15 @@ class _MatchUpHomeState extends State<MatchUpHome>
                       },
                       child: Row(
                         children: <Widget>[
-                          Text(
-                            "Match Ups",
-                            style: GoogleFonts.poppins(
-                                fontWeight: FontWeight.bold, fontSize: 13),
-                          ),
+                          // Text(
+                          //   "Match Ups",
+                          //   style: GoogleFonts.poppins(
+                          //       fontWeight: FontWeight.bold, fontSize: 13),
+                          // ),
+                          Image.asset(
+                            "assets/images/teamduel.png",
+                            width: 100,
+                          )
                           // SizedBox(
                           //   width: 3,
                           // ),
@@ -531,39 +623,6 @@ class _MatchUpHomeState extends State<MatchUpHome>
                     ),
                     // buildSizedBoxWidth(buildWidth(context), 0.10),
                     Spacer(),
-                    Text(
-                      "MYTEAM ",
-                      style: TextStyle(fontSize: 10),
-                    ),
-                    Text(
-                      "DUEL",
-                      style: TextStyle(
-                          color: Color.fromRGBO(249, 223, 65, 1), fontSize: 10),
-                    ),
-                    Spacer(),
-                    Consumer<CricketStates>(
-                      builder: (con, state, _) => GestureDetector(
-                        onTap: () {
-                          if (states.matchupSection ==
-                              MatchupSections.joinedmatchups) {
-                            state.changeMatchUpSection(
-                                MatchupSections.lobbymatchup);
-                            state.showHideAppBar(true);
-                          } else {
-                            state.changeMatchUpSection(
-                                MatchupSections.joinedmatchups);
-                            state.showHideAppBar(false);
-                          }
-                        },
-                        child: Text(
-                          states.matchupSection ==
-                                  MatchupSections.joinedmatchups
-                              ? "Lobby"
-                              : "Jointed (0)",
-                          style: GoogleFonts.poppins(fontSize: 12),
-                        ),
-                      ),
-                    )
                   ],
                 ),
               )
@@ -744,8 +803,14 @@ class _MatchUpHomeState extends State<MatchUpHome>
                                           left: buildWidth(context) * 0.3),
                                       child: GestureDetector(
                                         onTap: () {
+                                          if (matchups.getMatchupDates[0].data
+                                              .isEmpty) {
+                                            showAlertDialogNoFilter(
+                                                context, "No Dates Available");
+                                          } else {
+                                            showDatesBottomSheet(context);
+                                          }
                                           // selectDate(context);
-                                          showDatesBottomSheet(context);
                                         },
                                         child:
                                             //Select date code

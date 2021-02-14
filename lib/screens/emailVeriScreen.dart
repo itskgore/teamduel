@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:pin_code_text_field/pin_code_text_field.dart';
 import 'package:provider/provider.dart';
+import 'package:winx/config/colors.dart';
 import 'package:winx/functions/widgetFunc.dart';
 import 'package:winx/navigatorAnimation/bouncinganagivation.dart';
 import 'package:winx/providers/auth.dart';
@@ -33,15 +34,15 @@ class _EmailVerifyState extends State<EmailVerify> {
     _scaffoldkey.currentState.showSnackBar(SnackBar(
       behavior: SnackBarBehavior.floating,
       elevation: 8,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       content: Text(
         stringList,
         textAlign: TextAlign.center,
         style: TextStyle(
-            fontSize: 13.0, fontWeight: FontWeight.bold, color: Colors.red),
+            fontSize: 13.0, fontWeight: FontWeight.bold, color: Colors.white),
       ),
       duration: Duration(seconds: 2),
-      backgroundColor: Colors.black87,
+      backgroundColor: AppColors.mainColorLight,
     ));
   }
 
@@ -81,6 +82,7 @@ class _EmailVerifyState extends State<EmailVerify> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.mainColor,
       key: _scaffoldkey,
       appBar: AppBar(
         elevation: 0,
@@ -88,7 +90,7 @@ class _EmailVerifyState extends State<EmailVerify> {
         leading: IconButton(
             icon: Icon(
               Icons.arrow_back_ios,
-              color: Colors.black,
+              color: Colors.white,
             ),
             onPressed: () => Navigator.of(context).pop()),
       ),
@@ -99,25 +101,26 @@ class _EmailVerifyState extends State<EmailVerify> {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              Container(
-                color: Colors.black12,
-                height: buildHeight(context) * 0.25,
-                alignment: Alignment.center,
-                child:
-                    Text('Email Verify Image', style: TextStyle(fontSize: 28)),
-              ),
               buildSizedBox(buildHeight(context), 0.02),
-              Text('Enter the OTP sent on ${widget.userEmail}'),
-              buildSizedBox(buildHeight(context), 0.07),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 34),
+                width: double.infinity,
+                child: Text(
+                  'Enter the OTP sent on ${widget.userEmail}',
+                  style: TextStyle(color: Colors.grey, fontSize: 20),
+                  textAlign: TextAlign.left,
+                ),
+              ),
+              buildSizedBox(buildHeight(context), 0.04),
               PinCodeTextField(
                 autofocus: true,
                 controller: controller,
                 highlight: true,
-                highlightColor: Colors.blue,
-                defaultBorderColor: Colors.black,
-                hasTextBorderColor: Colors.green,
+                highlightColor: AppColors.mainColorLight,
+                defaultBorderColor: AppColors.mainColorLight,
+                hasTextBorderColor: AppColors.mainColorLight,
                 isCupertino: true,
-                pinBoxRadius: 20,
+                pinBoxRadius: 5,
                 maxLength: pinLength,
                 hasError: hasError,
                 onTextChanged: (text) {
@@ -132,14 +135,14 @@ class _EmailVerifyState extends State<EmailVerify> {
                 wrapAlignment: WrapAlignment.spaceAround,
                 pinBoxDecoration:
                     ProvidedPinBoxDecoration.defaultPinBoxDecoration,
-                pinTextStyle: TextStyle(fontSize: 30.0),
+                pinTextStyle: TextStyle(fontSize: 30.0, color: Colors.white),
                 pinTextAnimatedSwitcherTransition:
                     ProvidedPinBoxTextAnimation.scalingTransition,
-//                    pinBoxColor: Colors.green[100],
+                pinBoxColor: AppColors.mainColorLight,
                 pinTextAnimatedSwitcherDuration: Duration(milliseconds: 300),
-//                    highlightAnimation: true,
-                highlightAnimationBeginColor: Colors.black,
-                highlightAnimationEndColor: Colors.white12,
+                highlightAnimation: true,
+                highlightAnimationBeginColor: AppColors.mainColorLight,
+                highlightAnimationEndColor: AppColors.mainColorLight,
                 keyboardType: TextInputType.number,
               ),
               buildSizedBox(buildHeight(context), 0.05),
@@ -150,17 +153,17 @@ class _EmailVerifyState extends State<EmailVerify> {
                 child: Column(
                   children: [
                     Container(
-                      width: buildWidth(context) * 0.55,
-                      height: buildHeight(context) * 0.08,
+                      width: buildWidth(context) * 0.90,
+                      height: 40,
                       child: RaisedButton(
                         onPressed: () {
                           _submit(context);
                         },
-                        color: Colors.blue,
+                        color: Color.fromRGBO(16, 119, 194, 1),
                         elevation: 4,
                         animationDuration: Duration(milliseconds: 350),
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(30)),
+                            borderRadius: BorderRadius.circular(0)),
                         child: loading
                             ? CircularProgressIndicator(
                                 backgroundColor: Colors.white,

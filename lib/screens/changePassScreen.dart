@@ -2,8 +2,10 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pin_code_text_field/pin_code_text_field.dart';
 import 'package:provider/provider.dart';
+import 'package:winx/config/colors.dart';
 import 'package:winx/functions/widgetFunc.dart';
 import 'package:winx/navigatorAnimation/bouncinganagivation.dart';
 import 'package:winx/providers/auth.dart';
@@ -141,6 +143,7 @@ class _ChangePasswordState extends State<ChangePassword> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: AppColors.mainColor,
       key: _scaffoldkey,
       appBar: buildAppBar(context, 'Change Password'),
       body: SafeArea(
@@ -150,28 +153,26 @@ class _ChangePasswordState extends State<ChangePassword> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                    Container(
-                      color: Colors.black12,
-                      height: buildHeight(context) * 0.25,
-                      alignment: Alignment.center,
-                      child: Text('Change Password Image',
-                          style: TextStyle(fontSize: 28)),
-                    ),
                     buildSizedBox(buildHeight(context), 0.01),
-                    Text(
-                      'Enter the OTP sent on ${widget.email}',
-                      style: TextStyle(color: Colors.grey),
+                    Container(
+                      margin: EdgeInsets.symmetric(horizontal: 34),
+                      width: double.infinity,
+                      alignment: Alignment.topLeft,
+                      child: Text(
+                        'Enter the OTP sent on ${widget.email}',
+                        style: TextStyle(color: Colors.grey, fontSize: 20),
+                      ),
                     ),
                     buildSizedBox(buildHeight(context), 0.03),
                     PinCodeTextField(
                       autofocus: true,
                       controller: controller,
                       highlight: true,
-                      highlightColor: Colors.blue,
-                      defaultBorderColor: Colors.black,
-                      hasTextBorderColor: Colors.green,
+                      highlightColor: AppColors.mainColorLight,
+                      defaultBorderColor: AppColors.mainColorLight,
+                      hasTextBorderColor: AppColors.mainColorLight,
                       isCupertino: true,
-                      pinBoxRadius: 20,
+                      pinBoxRadius: 5,
                       maxLength: pinLength,
                       hasError: hasError,
                       onTextChanged: (text) {
@@ -186,15 +187,16 @@ class _ChangePasswordState extends State<ChangePassword> {
                       wrapAlignment: WrapAlignment.spaceAround,
                       pinBoxDecoration:
                           ProvidedPinBoxDecoration.defaultPinBoxDecoration,
-                      pinTextStyle: TextStyle(fontSize: 30.0),
+                      pinTextStyle:
+                          TextStyle(fontSize: 30.0, color: Colors.white),
                       pinTextAnimatedSwitcherTransition:
                           ProvidedPinBoxTextAnimation.scalingTransition,
-//                    pinBoxColor: Colors.green[100],
+                      pinBoxColor: AppColors.mainColorLight,
                       pinTextAnimatedSwitcherDuration:
                           Duration(milliseconds: 300),
-//                    highlightAnimation: true,
-                      highlightAnimationBeginColor: Colors.black,
-                      highlightAnimationEndColor: Colors.white12,
+                      highlightAnimation: true,
+                      highlightAnimationBeginColor: AppColors.mainColorLight,
+                      highlightAnimationEndColor: AppColors.mainColorLight,
                       keyboardType: TextInputType.number,
                     ),
                     buildSizedBox(buildHeight(context), 0.03),
@@ -209,46 +211,47 @@ class _ChangePasswordState extends State<ChangePassword> {
                             TextFormField(
                               obscureText: _password,
                               keyboardType: TextInputType.text,
-                              cursorColor: Colors.black,
+                              cursorColor: Colors.white,
                               cursorRadius: Radius.circular(10),
                               validator: (val) {
                                 val = val.trim();
                                 if (val.isEmpty || val.length <= 3) {
                                   return 'Password should have more than 3 characters';
                                 }
+                                return null;
                               },
                               onSaved: (val) {
                                 userData['password'] = val.trim();
                               },
+                              style: TextStyle(color: Colors.white),
                               decoration: InputDecoration(
-                                  contentPadding:
-                                      EdgeInsets.symmetric(vertical: 15),
-                                  prefixIcon: IconButton(
-                                      onPressed: () => setState(() {
-                                            _password = !_password;
-                                          }),
-                                      icon: Icon(_password
+                                fillColor: AppColors.mainColorLight,
+                                filled: true,
+                                contentPadding:
+                                    EdgeInsets.symmetric(vertical: 15),
+                                prefixIcon: IconButton(
+                                    onPressed: () => setState(() {
+                                          _password = !_password;
+                                        }),
+                                    icon: Icon(
+                                      _password
                                           ? FontAwesomeIcons.lock
-                                          : FontAwesomeIcons.lockOpen)),
-                                  labelText: 'Password',
-                                  border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(30),
-                                      borderSide:
-                                          BorderSide(color: Colors.white)),
-                                  enabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(30),
-                                      borderSide:
-                                          BorderSide(color: Colors.black)),
-                                  disabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(30),
-                                      borderSide:
-                                          BorderSide(color: Colors.white))),
+                                          : FontAwesomeIcons.lockOpen,
+                                      color: Colors.white,
+                                    )),
+                                hintText: 'Password',
+                                hintStyle: GoogleFonts.poppins(
+                                    color: Colors.white, fontSize: 12),
+                                focusedBorder: buildOutlineInputBorder(),
+                                border: buildOutlineInputBorder(),
+                              ),
                             ),
                             buildSizedBox(buildHeight(context), 0.03),
                             TextFormField(
                               obscureText: _confirmPassword,
                               keyboardType: TextInputType.text,
-                              cursorColor: Colors.black,
+                              cursorColor: Colors.white,
+                              style: TextStyle(color: Colors.white),
                               cursorRadius: Radius.circular(10),
                               validator: (val) {
                                 val = val.trim();
@@ -260,43 +263,40 @@ class _ChangePasswordState extends State<ChangePassword> {
                                 confirmPass = val.trim();
                               },
                               decoration: InputDecoration(
-                                  contentPadding:
-                                      EdgeInsets.symmetric(vertical: 15),
-                                  prefixIcon: IconButton(
-                                      onPressed: () => setState(() {
-                                            _confirmPassword =
-                                                !_confirmPassword;
-                                          }),
-                                      icon: Icon(_confirmPassword
+                                fillColor: AppColors.mainColorLight,
+                                filled: true,
+                                contentPadding:
+                                    EdgeInsets.symmetric(vertical: 15),
+                                prefixIcon: IconButton(
+                                    onPressed: () => setState(() {
+                                          _confirmPassword = !_confirmPassword;
+                                        }),
+                                    icon: Icon(
+                                      _confirmPassword
                                           ? FontAwesomeIcons.lock
-                                          : FontAwesomeIcons.lockOpen)),
-                                  labelText: 'Confirm Password',
-                                  border: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(30),
-                                      borderSide:
-                                          BorderSide(color: Colors.white)),
-                                  enabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(30),
-                                      borderSide:
-                                          BorderSide(color: Colors.black)),
-                                  disabledBorder: OutlineInputBorder(
-                                      borderRadius: BorderRadius.circular(30),
-                                      borderSide:
-                                          BorderSide(color: Colors.white))),
+                                          : FontAwesomeIcons.lockOpen,
+                                      color: Colors.white,
+                                    )),
+                                hintText: 'Confirm Password',
+                                hintStyle: GoogleFonts.poppins(
+                                    color: Colors.white, fontSize: 12),
+                                focusedBorder: buildOutlineInputBorder(),
+                                border: buildOutlineInputBorder(),
+                              ),
                             ),
                             buildSizedBox(buildHeight(context), 0.03),
                             Container(
-                              width: buildWidth(context) * 0.55,
-                              height: buildHeight(context) * 0.08,
+                              width: buildWidth(context) * 0.90,
+                              height: 40,
                               child: RaisedButton(
                                 onPressed: () {
                                   _submit(context);
                                 },
-                                color: Colors.blue,
+                                color: Color.fromRGBO(16, 119, 194, 1),
                                 elevation: 4,
                                 animationDuration: Duration(milliseconds: 350),
                                 shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(30)),
+                                    borderRadius: BorderRadius.circular(0)),
                                 child: loading
                                     ? CircularProgressIndicator(
                                         backgroundColor: Colors.white,
@@ -324,5 +324,11 @@ class _ChangePasswordState extends State<ChangePassword> {
                 ),
               ))),
     );
+  }
+
+  OutlineInputBorder buildOutlineInputBorder() {
+    return OutlineInputBorder(
+        borderRadius: BorderRadius.circular(0),
+        borderSide: BorderSide(color: AppColors.mainColorLight));
   }
 }

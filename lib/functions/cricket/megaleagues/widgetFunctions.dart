@@ -149,11 +149,11 @@ Row firstRow(
   );
 }
 
-void showAlertDialogNoFilter(BuildContext context) {
+void showAlertDialogNoFilter(BuildContext context, [String text]) {
   showDialog(
       context: context,
       child: CupertinoAlertDialog(
-        title: Text("No Filter Avaible!"),
+        title: Text(text.isEmpty ? "No Filter Avaible!" : text),
       ));
 }
 
@@ -788,18 +788,21 @@ class HorseMatchUp extends StatelessWidget {
   String jockey;
   String trainer;
   bool star;
+  bool isRight;
   HorseMatchUp(
       {Key key,
       this.horseName,
       this.horseNo,
       this.jockey,
       this.star,
+      this.isRight,
       this.trainer})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Card(
+      color: AppColors.mainColorLight,
       elevation: 2,
       child: Container(
           width: 150,
@@ -814,14 +817,15 @@ class HorseMatchUp extends StatelessWidget {
                       height: 28,
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                        color: Colors.red,
+                        color: isRight ? Colors.white : Colors.red,
                         border: Border.all(width: 1, color: Colors.black),
                         borderRadius: BorderRadius.circular(6),
                       ),
                       child: Text(
                         "$horseNo",
                         style: GoogleFonts.poppins(
-                            color: Colors.white, fontSize: 12),
+                            color: isRight ? Colors.black : Colors.white,
+                            fontSize: 12),
                       )),
                   SizedBox(
                     width: 8,
@@ -840,7 +844,9 @@ class HorseMatchUp extends StatelessWidget {
                                 overflow: TextOverflow.ellipsis,
                                 softWrap: true,
                                 style: GoogleFonts.poppins(
-                                    fontSize: 12, fontWeight: FontWeight.bold),
+                                    color: Colors.white,
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold),
                               ),
                             ),
                             star
@@ -868,6 +874,7 @@ class HorseMatchUp extends StatelessWidget {
                         softWrap: true,
                         maxLines: 1,
                         style: GoogleFonts.poppins(
+                          color: Colors.white,
                           fontSize: 10,
                         ),
                       ),
@@ -886,6 +893,7 @@ class HorseMatchUp extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   softWrap: true,
                   style: GoogleFonts.poppins(
+                    color: Colors.white,
                     fontSize: 10,
                   ),
                 ),

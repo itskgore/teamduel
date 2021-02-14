@@ -6,9 +6,9 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
-8-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml
+8-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="28" />
-9-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml
+9-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml
 10    <!--
 11         io.flutter.app.FlutterApplication is an android.app.Application that
 12         calls FlutterMain.startInitialization(this); in its onCreate method.
@@ -17,14 +17,14 @@
 15         FlutterApplication and put your custom class here.
 16    -->
 17    <uses-permission android:name="android.permission.INTERNET" />
-17-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:8:5-66
-17-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:8:22-64
+17-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:8:5-66
+17-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:8:22-64
 18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-18-->[:image_picker] /Users/ashutosharage/Flutter/winx/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:7:5-80
-18-->[:image_picker] /Users/ashutosharage/Flutter/winx/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:7:22-77
+18-->[:image_picker] /Users/ashutosharage/Flutter/teamduel/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:7:5-80
+18-->[:image_picker] /Users/ashutosharage/Flutter/teamduel/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:7:22-77
 19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-19-->[:image_picker] /Users/ashutosharage/Flutter/winx/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:8:5-81
-19-->[:image_picker] /Users/ashutosharage/Flutter/winx/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:8:22-78
+19-->[:image_picker] /Users/ashutosharage/Flutter/teamduel/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:8:5-81
+19-->[:image_picker] /Users/ashutosharage/Flutter/teamduel/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:8:22-78
 20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 20-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:24:5-79
 20-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/a2d3f38d709f8b9f54c2677fdca8f29a/play-services-measurement-17.2.2/AndroidManifest.xml:24:22-76
@@ -39,29 +39,29 @@
 23-->[com.google.firebase:firebase-iid:20.0.2] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:26:22-79
 24
 25    <application
-25-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:9:5-65:19
+25-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:9:5-65:19
 26        android:name="io.flutter.app.FlutterApplication"
-26-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:10:9-57
+26-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:10:9-57
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 27-->[androidx.core:core:1.1.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3aaf6e5219b7f981ec263df919098c6f/core-1.1.0/AndroidManifest.xml:24:18-86
 28        android:icon="@mipmap/ic_launcher"
-28-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:12:9-43
+28-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:12:9-43
 29        android:label="winx" >
-29-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:11:9-29
+29-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:11:9-29
 30        <activity
-30-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:13:9-41:20
+30-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:13:9-41:20
 31            android:name="com.example.winx.MainActivity"
-31-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:14:13-41
+31-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:14:13-41
 32            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-32-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:17:13-163
+32-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:17:13-163
 33            android:hardwareAccelerated="true"
-33-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:18:13-47
+33-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:18:13-47
 34            android:launchMode="singleTop"
-34-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:15:13-43
+34-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:15:13-43
 35            android:theme="@style/LaunchTheme"
-35-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:16:13-47
+35-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:16:13-47
 36            android:windowSoftInputMode="adjustResize" >
-36-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:19:13-55
+36-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:19:13-55
 37
 38            <!--
 39                 Specifies an Android theme to apply to this Activity as soon as
@@ -70,11 +70,11 @@
 42                 to determine the Window background behind the Flutter UI.
 43            -->
 44            <meta-data
-44-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:24:13-27:17
+44-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:24:13-27:17
 45                android:name="io.flutter.embedding.android.NormalTheme"
-45-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:25:15-70
+45-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:25:15-70
 46                android:resource="@style/NormalTheme" />
-46-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:26:15-52
+46-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:26:15-52
 47            <!--
 48                 Displays an Android View that continues showing the launch screen
 49                 Drawable until Flutter paints its first frame, then this splash
@@ -83,21 +83,21 @@
 52                 Flutter's first frame.
 53            -->
 54            <meta-data
-54-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:33:13-36:17
+54-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:33:13-36:17
 55                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-55-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:34:15-79
+55-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:34:15-79
 56                android:resource="@drawable/launch_background" />
-56-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:35:15-61
+56-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:35:15-61
 57
 58            <intent-filter>
-58-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:37:13-40:29
+58-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:37:13-40:29
 59                <action android:name="android.intent.action.MAIN" />
-59-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:38:17-68
-59-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:38:25-66
+59-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:38:17-68
+59-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:38:25-66
 60
 61                <category android:name="android.intent.category.LAUNCHER" />
-61-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:39:17-76
-61-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:39:27-74
+61-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:39:17-76
+61-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:39:27-74
 62            </intent-filter>
 63        </activity>
 64        <!--
@@ -105,68 +105,68 @@
 66             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
 67        -->
 68        <meta-data
-68-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:44:15-45:52
+68-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:44:15-45:52
 69            android:name="com.facebook.sdk.ApplicationId"
-69-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:44:26-71
+69-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:44:26-71
 70            android:value="@string/facebook_app_id" />
-70-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:45:11-50
+70-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:45:11-50
 71
 72        <activity
-72-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:47:7-50:46
+72-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:47:7-50:46
 73            android:name="com.facebook.FacebookActivity"
-73-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:47:17-61
+73-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:47:17-61
 74            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-74-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:48:11-113
+74-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:48:11-113
 75            android:label="@string/app_name" />
-75-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:50:11-43
+75-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:50:11-43
 76        <activity
-76-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:52:7-61:18
+76-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:52:7-61:18
 77            android:name="com.facebook.CustomTabActivity"
-77-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:53:11-56
+77-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:53:11-56
 78            android:exported="true" >
-78-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:54:11-34
+78-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:54:11-34
 79            <intent-filter>
-79-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:55:11-60:27
+79-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:55:11-60:27
 80                <action android:name="android.intent.action.VIEW" />
-80-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:56:15-67
-80-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:56:23-64
+80-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:56:15-67
+80-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:56:23-64
 81
 82                <category android:name="android.intent.category.DEFAULT" />
-82-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:57:15-74
-82-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:57:25-71
+82-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:57:15-74
+82-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:57:25-71
 83                <category android:name="android.intent.category.BROWSABLE" />
-83-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:58:15-76
-83-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:58:25-73
+83-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:58:15-76
+83-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:58:25-73
 84
 85                <data android:scheme="@string/fb_login_protocol_scheme" />
-85-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:59:15-73
-85-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:59:21-70
+85-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:59:15-73
+85-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:59:21-70
 86            </intent-filter>
 87        </activity>
 88
 89        <meta-data
-89-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:62:9-64:33
+89-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:62:9-64:33
 90            android:name="flutterEmbedding"
-90-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:63:13-44
+90-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:63:13-44
 91            android:value="2" />
-91-->/Users/ashutosharage/Flutter/winx/android/app/src/main/AndroidManifest.xml:64:13-30
+91-->/Users/ashutosharage/Flutter/teamduel/android/app/src/main/AndroidManifest.xml:64:13-30
 92
 93        <provider
-93-->[:image_picker] /Users/ashutosharage/Flutter/winx/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:9-19:20
+93-->[:image_picker] /Users/ashutosharage/Flutter/teamduel/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:11:9-19:20
 94            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-94-->[:image_picker] /Users/ashutosharage/Flutter/winx/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:12:13-82
+94-->[:image_picker] /Users/ashutosharage/Flutter/teamduel/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:12:13-82
 95            android:authorities="com.example.winx.flutter.image_provider"
-95-->[:image_picker] /Users/ashutosharage/Flutter/winx/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:13-74
+95-->[:image_picker] /Users/ashutosharage/Flutter/teamduel/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:13:13-74
 96            android:exported="false"
-96-->[:image_picker] /Users/ashutosharage/Flutter/winx/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:14:13-37
+96-->[:image_picker] /Users/ashutosharage/Flutter/teamduel/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:14:13-37
 97            android:grantUriPermissions="true" >
-97-->[:image_picker] /Users/ashutosharage/Flutter/winx/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:15:13-47
+97-->[:image_picker] /Users/ashutosharage/Flutter/teamduel/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:15:13-47
 98            <meta-data
-98-->[:image_picker] /Users/ashutosharage/Flutter/winx/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:16:13-18:75
+98-->[:image_picker] /Users/ashutosharage/Flutter/teamduel/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:16:13-18:75
 99                android:name="android.support.FILE_PROVIDER_PATHS"
-99-->[:image_picker] /Users/ashutosharage/Flutter/winx/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:17:17-67
+99-->[:image_picker] /Users/ashutosharage/Flutter/teamduel/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:17:17-67
 100                android:resource="@xml/flutter_image_picker_file_paths" />
-100-->[:image_picker] /Users/ashutosharage/Flutter/winx/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:18:17-72
+100-->[:image_picker] /Users/ashutosharage/Flutter/teamduel/build/image_picker/intermediates/library_manifest/release/AndroidManifest.xml:18:17-72
 101        </provider>
 102
 103        <receiver
@@ -219,7 +219,7 @@
 128            android:name="com.google.firebase.components.ComponentDiscoveryService"
 128-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/ca912bff2260618b5b638fe661521702/play-services-measurement-api-17.2.2/AndroidManifest.xml:28:13-84
 129            android:directBootAware="true"
-129-->[com.google.firebase:firebase-common:19.3.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/33be7d2903630113d9938615fd9f0b66/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+129-->[com.google.firebase:firebase-common:19.3.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/204aca6af8de952e12af73c3c9828e12/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
 130            android:exported="false" >
 130-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/ca912bff2260618b5b638fe661521702/play-services-measurement-api-17.2.2/AndroidManifest.xml:29:13-37
 131            <meta-data
@@ -237,27 +237,27 @@
 137        </service>
 138
 139        <activity
-139-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+139-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
 140            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-140-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+140-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
 141            android:excludeFromRecents="true"
-141-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+141-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
 142            android:exported="false"
-142-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+142-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
 143            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-143-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+143-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
 144        <!--
 145            Service handling Google Sign-In user revocation. For apps that do not integrate with
 146            Google Sign-In, this service will never be started.
 147        -->
 148        <service
-148-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+148-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
 149            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-149-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+149-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
 150            android:exported="true"
-150-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+150-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
 151            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
-151-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/d38b85545cf46b1ccbd6b58c2210057f/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+151-->[com.google.android.gms:play-services-auth:16.0.1] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/3c39edfb398a96b281e553c582efe654/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
 152
 153        <receiver
 153-->[com.google.firebase:firebase-iid:20.0.2] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/f26cdfb5f8d69cbc9663543f3ec1de65/firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
@@ -276,15 +276,15 @@
 160        </receiver>
 161
 162        <provider
-162-->[com.google.firebase:firebase-common:19.3.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/33be7d2903630113d9938615fd9f0b66/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+162-->[com.google.firebase:firebase-common:19.3.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/204aca6af8de952e12af73c3c9828e12/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
 163            android:name="com.google.firebase.provider.FirebaseInitProvider"
-163-->[com.google.firebase:firebase-common:19.3.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/33be7d2903630113d9938615fd9f0b66/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+163-->[com.google.firebase:firebase-common:19.3.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/204aca6af8de952e12af73c3c9828e12/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
 164            android:authorities="com.example.winx.firebaseinitprovider"
-164-->[com.google.firebase:firebase-common:19.3.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/33be7d2903630113d9938615fd9f0b66/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+164-->[com.google.firebase:firebase-common:19.3.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/204aca6af8de952e12af73c3c9828e12/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
 165            android:exported="false"
-165-->[com.google.firebase:firebase-common:19.3.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/33be7d2903630113d9938615fd9f0b66/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+165-->[com.google.firebase:firebase-common:19.3.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/204aca6af8de952e12af73c3c9828e12/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
 166            android:initOrder="100" />
-166-->[com.google.firebase:firebase-common:19.3.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/33be7d2903630113d9938615fd9f0b66/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+166-->[com.google.firebase:firebase-common:19.3.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/204aca6af8de952e12af73c3c9828e12/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
 167
 168        <activity
 168-->[com.google.android.gms:play-services-base:17.0.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/4c0b774c09d5393feb013f0dbe753af3/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
@@ -296,11 +296,11 @@
 171-->[com.google.android.gms:play-services-base:17.0.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/4c0b774c09d5393feb013f0dbe753af3/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
 172
 173        <meta-data
-173-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/88cce25b22522eb0afe164b525a5546c/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+173-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/722c2d0c2a229c368e8f6439e3518530/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
 174            android:name="com.google.android.gms.version"
-174-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/88cce25b22522eb0afe164b525a5546c/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+174-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/722c2d0c2a229c368e8f6439e3518530/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
 175            android:value="@integer/google_play_services_version" />
-175-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/88cce25b22522eb0afe164b525a5546c/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+175-->[com.google.android.gms:play-services-basement:17.0.0] /Users/ashutosharage/.gradle/caches/transforms-2/files-2.1/722c2d0c2a229c368e8f6439e3518530/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
 176    </application>
 177
 178</manifest>

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
+import 'package:winx/config/colors.dart';
 import 'package:winx/functions/widgetFunc.dart';
 import 'package:winx/navigatorAnimation/bouncinganagivation.dart';
 import 'package:winx/providers/auth.dart';
@@ -57,7 +59,7 @@ class _ForgotPasswordDialogState extends State<ForgotPasswordDialog> {
           Container(
             padding: EdgeInsets.all(ForgotPasswordDialog.padding),
             decoration: BoxDecoration(
-                color: Colors.white,
+                color: AppColors.mainColor,
                 shape: BoxShape.rectangle,
                 borderRadius:
                     BorderRadius.circular(ForgotPasswordDialog.padding),
@@ -79,20 +81,35 @@ class _ForgotPasswordDialogState extends State<ForgotPasswordDialog> {
                     children: <Widget>[
                       Container(
                         alignment: Alignment.center,
-                        child: Text(
-                          'LOGO',
-                          style: TextStyle(fontSize: 28),
+                        child: Image.asset(
+                          "assets/images/teamduel.png",
+                          width: 190,
                         ),
+                      ),
+                      SizedBox(
+                        height: 20,
                       ),
                       TextFormField(
                         keyboardType: TextInputType.emailAddress,
+                        style: TextStyle(color: Colors.white),
+                        cursorColor: Colors.white,
                         decoration: InputDecoration(
-                          labelText: 'Email-id / Mobile No.',
-                          prefixIcon: Icon(FontAwesomeIcons.envelopeOpen),
-                          focusedBorder: UnderlineInputBorder(
+                            hintText: 'Email-id / Mobile No.',
+                            prefixIcon: Icon(FontAwesomeIcons.envelopeOpen,
+                                color: Colors.white),
+                            fillColor: AppColors.mainColorLight,
+                            filled: true,
+                            hintStyle: GoogleFonts.poppins(
+                                color: Colors.white, fontSize: 12),
+                            focusedBorder: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(0),
+                                borderSide: BorderSide(
+                                    color: AppColors.mainColorLight)),
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(0),
                               borderSide:
-                                  BorderSide(color: Colors.grey, width: 2)),
-                        ),
+                                  BorderSide(color: AppColors.mainColorLight),
+                            )),
                         textInputAction: TextInputAction.next,
                         validator: (value) {
                           value = value.trim();
@@ -123,14 +140,13 @@ class _ForgotPasswordDialogState extends State<ForgotPasswordDialog> {
                         children: <Widget>[
                           _isLoading
                               ? CircularProgressIndicator()
-                              : RaisedButton(
-                                  color: Colors.blue,
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius:
-                                          BorderRadius.circular(30.0)),
-                                  child: Padding(
-                                    padding: const EdgeInsets.fromLTRB(
-                                        20, 10, 20, 10),
+                              : Container(
+                                  width: 200,
+                                  child: RaisedButton(
+                                    color: Color.fromRGBO(16, 119, 194, 1),
+                                    shape: RoundedRectangleBorder(
+                                        borderRadius:
+                                            BorderRadius.circular(0.0)),
                                     child: _isLoading
                                         ? CircularProgressIndicator(
                                             backgroundColor: Colors.white)
@@ -139,22 +155,21 @@ class _ForgotPasswordDialogState extends State<ForgotPasswordDialog> {
                                             maxLines: 1,
                                             style: TextStyle(
                                               fontSize: 18,
-                                              fontWeight: FontWeight.bold,
                                               color: Colors.white,
                                             ),
                                           ),
+                                    onPressed: () async {
+                                      _submit(context);
+                                      // Navigator.of(context)
+                                      //     .pop();
+                                      // _submitForgotPassword();
+                                      // Navigator.of(context).pushNamed(
+                                      //     ForgotPass.routeName,
+                                      //     arguments: {
+                                      //       'email': 'karangore518@gmail.com'
+                                      //     });
+                                    },
                                   ),
-                                  onPressed: () async {
-                                    _submit(context);
-                                    // Navigator.of(context)
-                                    //     .pop();
-                                    // _submitForgotPassword();
-                                    // Navigator.of(context).pushNamed(
-                                    //     ForgotPass.routeName,
-                                    //     arguments: {
-                                    //       'email': 'karangore518@gmail.com'
-                                    //     });
-                                  },
                                 ),
                         ],
                       ),
