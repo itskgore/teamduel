@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>941119396354-u6cbbctl4nim65pin8o80ajfsblpcln9.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.941119396354-u6cbbctl4nim65pin8o80ajfsblpcln9</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCE0jCkQXsGAbxh7xZmvmhPX16sqyFGI1Q</string>
+	<key>GCM_SENDER_ID</key>
+	<string>941119396354</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.winx</string>
+	<key>PROJECT_ID</key>
+	<string>teamduel-4f764</string>
+	<key>STORAGE_BUCKET</key>
+	<string>teamduel-4f764.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:941119396354:ios:f136fe09315821226e251b</string>
+</dict>
+</plist>
